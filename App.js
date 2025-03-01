@@ -5,7 +5,7 @@ function App() {
   const [mensaje, setMensaje] = useState("");
 
   const generarPresentacion = async () => {
-    const response = await fetch(`https://TUDOMINIO.render.com/generar_presentacion/?tema=${tema}`);
+    const response = await fetch(`https://generador-presentaciones.onrender.com`);
     const data = await response.json();
     setMensaje(data.mensaje);
   };
